@@ -17,4 +17,13 @@ public class Pravokutnik {
     public double izracunajOpseg(){
         return (2*(stranicaA+stranicaB));
     }
+
+    public String getNaziv() {
+        return naziv;
+    }
+
+    public void setNaziv(String naziv) {
+        this.naziv = naziv;
+    }
+
 }

@@ -21,4 +21,12 @@ public class Trokut  {
     public double izracunajOpseg() {
         return (stranicaA + stranicaB + stranicaC);
     }
+
+    public String getNaziv() {
+        return naziv;
+    }
+
+    public void setNaziv(String naziv) {
+        this.naziv = naziv;
+    }
 }

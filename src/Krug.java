@@ -15,4 +15,11 @@ public class Krug {
         return 2 * Math.PI * radijus;
     }
 
+    public String getNaziv() {
+        return naziv;
+    }
+
+    public void setNaziv(String naziv) {
+        this.naziv = naziv;
+    }
 }
