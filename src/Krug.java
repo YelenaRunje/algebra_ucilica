@@ -3,8 +3,7 @@ public class Krug {
     private String naziv;
     private double radijus;
 
-    public Krug(String naziv,double radijus) {
-        this.naziv = naziv;
+    public Krug(double radijus) {
         this.radijus = radijus;
     }
 

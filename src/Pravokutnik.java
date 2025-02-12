@@ -5,8 +5,7 @@ public class Pravokutnik {
     private double stranicaB;
 
 
-    public Pravokutnik( String naziv,double stranicaA, double stranicaB) {
-        this.naziv = naziv;
+    public Pravokutnik(double stranicaA, double stranicaB) {
         this.stranicaA = stranicaA;
         this.stranicaB = stranicaB;
     }

@@ -6,8 +6,7 @@ public class Trokut  {
     private double stranicaC;
 
 
-    public Trokut(String naziv, double stranicaA, double stranicaB, double stranicaC) {
-        this.naziv = naziv;
+    public Trokut(double stranicaA, double stranicaB, double stranicaC) {
         this.stranicaA = stranicaA;
         this.stranicaB = stranicaB;
         this.stranicaC = stranicaC;
