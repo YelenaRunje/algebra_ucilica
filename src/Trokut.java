@@ -1,32 +1,30 @@
-public class Trokut  {
+public class Trokut extends GeometrijskiLik {
 
-    private String naziv;
-    private double stranicaA;
-    private double stranicaB;
-    private double stranicaC;
+    private int a;
+    private int b;
+    private int c;
 
 
-    public Trokut(double stranicaA, double stranicaB, double stranicaC) {
-        this.stranicaA = stranicaA;
-        this.stranicaB = stranicaB;
-        this.stranicaC = stranicaC;
+    public Trokut(String naziv,int stranicaA, int b, int c) {
+        super(naziv);
+        this.a = stranicaA;
+        this.b = b;
+        this.c = c;
+    }
+    @Override
+    public double povrsina() {
+        double s = (a + b + c) / 2;
+        return Math.sqrt(s * (s - a) * (s - b) * (s - c));
     }
 
-    public double izracunajPovrsinu() {
-        double s = (stranicaA + stranicaB + stranicaC) / 2;
-        return Math.sqrt(s * (s - stranicaA) * (s - stranicaB) * (s - stranicaC));
+    @Override
+    public double opseg() {
+        return (a + b + c);
     }
 
-
-    public double izracunajOpseg() {
-        return (stranicaA + stranicaB + stranicaC);
+    @Override
+    public int compareTo(GeometrijskiLik o) {
+        return Double.compare(this.povrsina(), o.povrsina());
     }
 
-    public String getNaziv() {
-        return naziv;
-    }
-
-    public void setNaziv(String naziv) {
-        this.naziv = naziv;
-    }
 }
